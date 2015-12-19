@@ -1,0 +1,14 @@
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\ArduinoDoorbell.Tests.dll
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\ArduinoDoorbell.Tests.pdb
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\ArduinoDoorbell.exe
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\Microsoft.Pex.Framework.dll
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\System.Windows.Forms.dll
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\Microsoft.ExtendedReflection.Reasoning.dll
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\Microsoft.ExtendedReflection.dll
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\ArduinoDoorbell.pdb
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\Microsoft.Pex.Framework.xml
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Release\ArduinoDoorbell.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Release\ArduinoDoorbell.Tests.dll
+C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Release\ArduinoDoorbell.Tests.pdb
