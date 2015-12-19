@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO.Ports;  
+using System.IO.Ports;
+using System.Media;
 
 namespace ArduinoDoorbell
 {
@@ -51,8 +52,15 @@ namespace ArduinoDoorbell
                 case "Doorbell Pressed":
                     const string message = "You have a visitor";
                     const string caption = "Doorbell";
-                    var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    break;
+
+                    if (cbSoundOnly.Checked)
+                        {
+                            SystemSounds.Hand.Play();
+                        } else {
+                            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+                        break;
                 case "Heartbeat":
                     lblHeartbeat.Visible = !lblHeartbeat.Visible;
                     break;

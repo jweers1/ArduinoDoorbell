@@ -12,7 +12,6 @@ C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorb
 C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell\obj\Debug\ArduinoDoorbell.pdb
 C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell\bin\Debug\ArduinoDoorbell.exe
 C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell\bin\Debug\ArduinoDoorbell.pdb
-C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell\obj\Debug\ArduinoDoorbell.csprojResolveAssemblyReference.cache
 C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell\obj\Debug\ArduinoDoorbell.Form1.resources
 C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell\obj\Debug\ArduinoDoorbell.Properties.Resources.resources
 C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell\obj\Debug\ArduinoDoorbell.csproj.GenerateResource.Cache

@@ -12,3 +12,12 @@ C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoo
 C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Debug\ArduinoDoorbell.Tests.csprojResolveAssemblyReference.cache
 C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Debug\ArduinoDoorbell.Tests.dll
 C:\Users\jweers\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Debug\ArduinoDoorbell.Tests.pdb
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Debug\ArduinoDoorbell.Tests.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Debug\ArduinoDoorbell.Tests.pdb
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Debug\ArduinoDoorbell.exe
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Debug\System.Windows.Forms.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\bin\Debug\ArduinoDoorbell.pdb
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Debug\ArduinoDoorbell.Tests.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Debug\ArduinoDoorbell.Tests.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\ArduinoDoorbell\ArduinoDoorbell.Tests\obj\Debug\ArduinoDoorbell.Tests.pdb
