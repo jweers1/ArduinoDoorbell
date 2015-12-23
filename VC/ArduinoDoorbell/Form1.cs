@@ -15,12 +15,11 @@ namespace ArduinoDoorbell
     public partial class Form1 : Form
     {
         private SerialPort serialPort1;
-
+        private Timer heartBeatTimer;
 
         public Form1()
         {
             InitializeComponent();
-           
         }
 
         private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
@@ -32,6 +31,25 @@ namespace ArduinoDoorbell
             }
          
         }
+
+        private void serialPort1_ErrorReceived(object sender, System.IO.Ports.SerialErrorReceivedEventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+
+            }
+
+        }
+
+        private void missingHeartbeatEvent(object sender, EventArgs e)
+
+        {
+            const string caption = "Arduino Doorbell";
+            const string message = "It's been a while since we got a heartbeat. Your serial port may need reconnected.";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
 
         private delegate void LineReceivedEvent(string line);
         private void LineReceived(string line)
@@ -58,11 +76,24 @@ namespace ArduinoDoorbell
                             SystemSounds.Hand.Play();
                         } else {
                             var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                         }
 
                         break;
                 case "Heartbeat":
                     lblHeartbeat.Visible = !lblHeartbeat.Visible;
+                    if (heartBeatTimer == null)
+                    {
+                        heartBeatTimer = new Timer();
+                        heartBeatTimer.Interval = 60000;
+                        heartBeatTimer.Enabled = true;
+                        heartBeatTimer.Tick += new System.EventHandler(missingHeartbeatEvent);
+                    } else
+                    {
+                        heartBeatTimer.Stop();
+                        heartBeatTimer.Interval = 60000;
+                        heartBeatTimer.Start();
+                    }
                     break;
                 default:
                     lblSerialValue.Text = "RCV: " + line;
@@ -77,7 +108,10 @@ namespace ArduinoDoorbell
             serialPort1 = new SerialPort();
 
             cbComPort.Items.AddRange(SerialPort.GetPortNames());
-            cbComPort.SelectedIndex = 0;
+            if (cbComPort.Items.Count != 0)
+            {
+                cbComPort.SelectedIndex = 0;
+            }
 
             btnCoffee.Visible = false;
             btnNoCoffee.Visible = false;
@@ -86,6 +120,14 @@ namespace ArduinoDoorbell
 
         private void Connect_Click(object sender, EventArgs e)
         {
+            if ((string)cbComPort.SelectedItem == null)
+            {
+                cbComPort.Items.AddRange(SerialPort.GetPortNames());
+                if (cbComPort.Items.Count != 0)
+                {
+                    cbComPort.SelectedIndex = 0;
+                }
+            }
             try {
                 serialPort1.PortName = (string)cbComPort.SelectedItem;
                 serialPort1.BaudRate = 9600;
@@ -93,6 +135,7 @@ namespace ArduinoDoorbell
                 serialPort1.Open();
 
                 serialPort1.DataReceived += serialPort1_DataReceived;
+                serialPort1.ErrorReceived += serialPort1_ErrorReceived;
 
                 btnDisconnect.Enabled = true;
                 btnConnect.Enabled = false;
@@ -113,6 +156,11 @@ namespace ArduinoDoorbell
             btnCoffee.Visible = false;
             btnNoCoffee.Visible = false;
             lblStatusValue.Text = "Disconnected";
+            if (heartBeatTimer != null)
+            {
+                heartBeatTimer.Stop();
+                heartBeatTimer.Dispose();
+            }
         }
 
         private void btnCoffee_Click(object sender, EventArgs e)
